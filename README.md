@@ -37,7 +37,7 @@
 
 ### 代码编写
 
-在 `Calculator` 文件中，你 **只需要** 将代码写在两个`===== YOUR CODE HERE =====` 之间的区域，其他代码禁止修改。
+在 `Calculator` 文件中，你 **只需要** 将代码写在两个`===== YOUR CODE HERE =====` 之间的区域，其他区域代码 **禁止修改**。
 
 请将字符串 `s` 作为表达式进行处理，并把算出来的结果放在整数 `result` 中。
 
@@ -47,3 +47,19 @@
 运行代码，如果结果是 `:) You have passed all tests, please upload your code onto FTP.`，那么说明代码正确，请提交到 FTP；如果结果是 `:( Sorry, it seems that there is something wrong with your code.` 请重新检查代码。
 
 提交时请 **将整个 Calculator 目录打包**，而非单个 java 文件。
+
+
+### 提示
+
+
+**没有遇到困难不要看**
+
+**没有遇到困难不要看**
+
+**没有遇到困难不要看**
+
+一种解决方案：
+
+1. 使用循环语句读取字符串中的字符（`charAt()`），直到读到 `+-*/`，将前面读到的字符串转化为数字（`Integer.parseInt()`）。
+2. 跳过操作符，继续读字符直到结尾（`length()`），将读到的字符串转化为数字。
+3. 根据操作符求出两个数字的结果。
