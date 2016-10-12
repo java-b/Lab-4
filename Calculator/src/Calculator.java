@@ -28,13 +28,11 @@ public class Calculator {
 
     public static void main(String[] args){
         boolean passed=eval("1+1")==2
-                & eval("999*1")==999
-                & eval("1-1")==0
-                & eval("1-1000")==-999
-                & eval("1*1")==1
-                & eval("999*0")==0
-                & eval("1/2")==0
-                & eval("1000/2")==500;
+                & eval("1+1+1")==3
+                & eval("1+1+1+1")==4
+                & eval("1+99+100")==200
+                & eval("997+1+1+1")==1000
+                & eval("1+2+3+4+5+6+7+8+9+10")==55;
         if (passed)
             System.out.println(":) You have passed all tests, please upload your code onto FTP.");
         else
