@@ -10,8 +10,8 @@ public class Calculator {
         int result=0;
         /*
          * Instruction:
-         *      1. You can only write code between the two label "YOUR CODE HERE".
-         *      2. You should calculate the expression s, and assign it to the variable result.
+         *      1. You can only write your code between the two labels "YOUR CODE HERE".
+         *      2. You should calculate the expression s, and assign it to the variable "result".
          *
          */
         // ====== YOUR CODE HERE ========
@@ -28,11 +28,11 @@ public class Calculator {
 
     public static void main(String[] args){
         boolean passed=eval("1+1")==2
-                & eval("1+1+1")==3
-                & eval("1+1+1+1")==4
-                & eval("1+99+100")==200
+                & eval("1+1-1")==1
+                & eval("1-1-1-1")==-2
+                & eval("1+99-100")==0
                 & eval("997+1+1+1")==1000
-                & eval("1+2+3+4+5+6+7+8+9+10")==55;
+                & eval("1-2+3-4+5-6+7-8+9-10")==-5;
         if (passed)
             System.out.println(":) You have passed all tests, please upload your code onto FTP.");
         else
